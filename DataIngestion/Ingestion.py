@@ -13,6 +13,10 @@ class Data:
         data.to_csv(self.filePath, index=False)
         print("DataSet downloaded successfully....")
 
+    def Load(self):
+        dt = pd.read_csv(self.dataUrl)
+        return dt
+
 
 
 DATASET_URL = "https://raw.githubusercontent.com/MainakRepositor/Diabetes-Prediction-System/master/diabetes.csv"
