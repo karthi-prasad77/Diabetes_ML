@@ -1,6 +1,9 @@
-import os
+import sys
+sys.path.append('./utils')
 import streamlit as st
-from utils.modelPredict import bayes_predict
+from utils import modelPredict
+
+print(modelPredict)
 
 def app(data):
     """
@@ -28,7 +31,8 @@ def app(data):
 
     # Predict functionality
     if st.button("Predict"):
-        prediction = bayes_predict(features)
+        prediction = modelPredict.bayes_predict(features)
+        print("Prediction : ", prediction)
         # score += 0.20
 
         st.info("Predicted Successfully")

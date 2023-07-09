@@ -1,10 +1,15 @@
 import streamlit as st
 import pandas as pd
-from components import home, about, data, predict, load
+import sys
+sys.path.append('./src/components')
+import home
+import predict
+import data
+import about
 import os
 
 # dataset
-dataUrl = os.path.join("../DataIngestion/Diabetes_Data.csv")
+dataUrl = os.path.join("./DataIngestion/Diabetes_Data.csv")
 
 
 # Configure the app
@@ -32,20 +37,18 @@ page = st.sidebar.radio("Pages", list(components.keys()))
 
 dt = pd.read_csv(dataUrl)
 
+print(page)
+
 
 # Select apge to run
-try:
-    if page == "Predict":
-        components[page].app(dt)
-    elif page == "Home":
-        components[page].app()
-    elif page == "About":
-        components[page].app()
-    elif page == "Data":
-        components[page].app(dt)
-    else:
-        print("Something went Wrong")
-except:
-    print("Error occurs contact the developer")
+if page == 'Predict':
+    components[page].app(dt)
+elif (page == "Data"):
+    components[page].app(dt)
+elif page == "About":
+    components[page].app()
+elif page == "Home":
+    components[page].app()
+
 
 

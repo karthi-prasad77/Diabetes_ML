@@ -9,7 +9,7 @@ def app():
     st.title("Diabetes Prediction System")
 
     # Home page Iamge
-    st.image("")
+    # st.image("")
 
     # Description to the application
     st.markdown('''
