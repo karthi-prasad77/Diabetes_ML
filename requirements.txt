@@ -5,3 +5,4 @@ seaborn
 scikit_learn
 streamlit
 notebook
+tqdm
