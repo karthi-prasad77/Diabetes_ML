@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 # about the author method
-def about():
+def app():
     """
         about : It describes the info about
                 the author

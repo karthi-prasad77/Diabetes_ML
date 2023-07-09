@@ -1,6 +1,6 @@
 import streamlit as st
 
-def data(data):
+def app(data):
     """
         data : It describes the data in the
                Info page

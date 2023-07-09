@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-def home():
+def app():
     """
         home : It describes the homepage of 
                 the application
