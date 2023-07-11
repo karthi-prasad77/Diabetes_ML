@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 from typing import List
 
-MODEL_PATH = os.path.join('Models\\bayes.pkl')
+MODEL_PATH = os.path.join('../../../Models/bayes.pkl')
 
 # Deserializing the model
 def bayes_predict(data: List, path=MODEL_PATH):
