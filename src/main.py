@@ -4,7 +4,7 @@ from components import home, about, data, predict, load
 import os
 
 # dataset
-dataUrl = os.path.join("../DataIngestion/Diabetes_Data.csv")
+dataUrl = "https://raw.githubusercontent.com/MainakRepositor/Diabetes-Prediction-System/master/diabetes.csv"
 
 
 # Configure the app
