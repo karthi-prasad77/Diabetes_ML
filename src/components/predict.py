@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from utils.modelPredict import bayes_predict
 
-@st.cache_resource
+@st.cache_data
 def app(data):
     """
         predict : It would predic the user medical
