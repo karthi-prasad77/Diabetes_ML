@@ -2,7 +2,6 @@ import os
 import streamlit as st
 from utils.modelPredict import bayes_predict
 
-@st.cache()
 def app(data):
     """
         predict : It would predic the user medical
