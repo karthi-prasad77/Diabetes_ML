@@ -9,11 +9,11 @@ import about
 import os
 
 # dataset
-<<<<<<< HEAD:main.py
+
 dataUrl = os.path.join("./DataIngestion/Diabetes_Data.csv")
 =======
 dataUrl = "https://raw.githubusercontent.com/MainakRepositor/Diabetes-Prediction-System/master/diabetes.csv"
->>>>>>> 9c6f18f5a6c2780a0a9131d4f9dd89eaddb1db52:src/main.py
+
 
 
 # Configure the app
