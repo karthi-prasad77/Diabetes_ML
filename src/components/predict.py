@@ -38,7 +38,7 @@ def app(data):
         st.info("Predicted Successfully")
 
         # Prediction sentences
-        if (prediction == 0):
+        if (prediction == 1):
             st.warning("Patient either has high risk of diabetes mellitus")
         else:
             st.warning("Patient free from diabetes")
