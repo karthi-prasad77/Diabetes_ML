@@ -5,7 +5,7 @@ import numpy as np
 from typing import List
 
 # Deserializing the model
-def bayes_predict(data: List, path=model_file):
+def bayes_predict(data: List):
     print("Hello", os.getcwd())
     model_file = f'https://github.com/karthi-prasad77/Diabetes_ML/blob/main/Models/bayes.pkl'
     data = requests.get(model_file)
