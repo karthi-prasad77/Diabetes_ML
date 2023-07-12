@@ -14,6 +14,6 @@ def app():
     # Description to the application
     st.markdown('''
         <p style="font-size: 20px;">
-                
+            Patients can able to check diabetes or not
         </p>
     ''')
