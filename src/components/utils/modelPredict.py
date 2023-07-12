@@ -3,11 +3,8 @@ import pickle
 import numpy as np
 from typing import List
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
 
-models_dir = os.path.join(current_dir, '../../Models')
-
-model_file = os.path.join(models_dir, 'bayes.pkl')
+model_file = f'./bayes.pkl'
 # Deserializing the model
 def bayes_predict(data: List, path=model_file):
     model = pickle.load(open(path, "rb"))
