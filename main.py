@@ -48,8 +48,6 @@ if page == 'Predict':
     components[page].app(dt)
 elif (page == "Data"):
     components[page].app(dt)
-"""elif (page == "About"):
-    components[page].app()"""
 elif (page == "Home"):
     components[page].app()
 
